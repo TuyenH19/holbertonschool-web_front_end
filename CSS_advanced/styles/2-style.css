@@ -1,3 +1,8 @@
+/* Set  the behavior of the scroll to be as fluid as possible */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Set the foreground color value for body */
 body {
     color: #161616;
