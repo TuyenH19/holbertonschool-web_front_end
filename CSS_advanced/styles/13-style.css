@@ -19,12 +19,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold); 
 }
 
-/* Set the foreground color value for anchor elements */
-a {
-    color: var(--text-color);
-    text-decoration: none; /* Style anchor elements so the text isn’t decorated with anything */
-}
-
 /* Pseudo Classes */
 a:link {
     color: var(--text-color);
