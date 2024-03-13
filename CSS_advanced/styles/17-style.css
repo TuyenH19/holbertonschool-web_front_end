@@ -62,17 +62,17 @@ a:active {
 /* Set horizontal alignment  of class section-header */
 .section-header {
     text-align: var(--section-header-align);
-    pad: var(--section-header-padding);
+    padding: var(--section-header-padding);
 }
 
 /* Set pad all 4 side for class section-body */
 .section-body {
-    pad: var(--section-body-padding);
+    padding: var(--section-body-padding);
 }
 
 /* Set pad all 4 sides for class section-footer */
 .section-footer {
-    pad: var(--section-footer-padding);
+    padding: var(--section-footer-padding);
     text-align: var(--section-footer-align);
 }
 
@@ -102,7 +102,7 @@ a:active {
 
 /* Set pad all 4 sides for class footer */
 .footer {
-    pad: var(--footer-padding);
+    padding: var(--footer-padding);
 }
 
 /* Define custom properties to the root elements */
