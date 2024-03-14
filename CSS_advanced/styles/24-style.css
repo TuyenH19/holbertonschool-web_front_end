@@ -41,7 +41,7 @@ a:hover {
 }
 
 a:active {
-    background-color: var(---color-light-grey);
+    background-color: var(--color-light-grey);
 }
 
 /* Set display value for elements with class visually-hidden */
@@ -52,6 +52,25 @@ a:active {
 /* Set foreground color value for elements with class card-category */
 .card-category {
     color: var(--color-primary);
+}
+
+/* Set card-title that is inside card-services */
+.card-services .card-title {
+    margin: none;
+}
+
+/* Set target a that inside card-services */
+.card-services a {
+    display: block;
+    padding: 2rem; /* 2 times the root element's padding */
+    background-color: var(--color-light-grey);
+}
+
+/* Set hover state of a that inside card.services */
+.card-services a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
 }
 
 /* Set the padding on all 4 sides for class section */
@@ -194,32 +213,13 @@ ul.row {
     fill: var(--text-color);
 }
 
-/* Set card-title that is inside card-services */
-.card-services .card-title {
-    margin: none;
-}
-
-/* Set target a that inside card-services */
-.card-services a {
-    display: block;
-    padding: 2rem; /* 2 times the root element's padding */
-    background-color: var(--color-light-grey);
-}
-
-/* Set hover state of a that inside card.services */
-.card-services a:hover {
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    text-decoration: none;
-}
-
 /* Define custom properties to the root elements */
 :root {
     /* Color properties */
 --color-primary: #d73953;
 --color-black: #090909;
 --color-white: #ffffff;
----color-light-grey: #f3f3f3;
+--color-light-grey: #f3f3f3;
 --color-dark-grey: #353535;
 --text-color: var(--color-black);
 
