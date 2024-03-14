@@ -168,7 +168,7 @@ ul.row {
 }
 
 /* Set all ul tag in the footer class */
-ul.footer {
+.footer ul {
     text-align: right;
 }
 
