@@ -34,7 +34,7 @@ a:hover {
 }
 
 a:active {
-    background-color: var(---color-light-grey);
+    background-color: var(--color-light-grey);
 }
 
 /* Set display value for elements with class visually-hidden */
@@ -65,7 +65,7 @@ a:active {
 .section-tagline {
     color: var(--color-primary);
     font-family: var(--font-family-title); /* Set family of fonts */
-    transform: var(--section-tagline-transform); /* Transform the text */
+    text-transform: var(--section-tagline-transform); /* Transform the text */
     font-weight: var(--font-weight-bold); /* Set the weight of fonts */
 }
 
@@ -75,7 +75,7 @@ a:active {
 --color-primary: #d73953;
 --color-black: #090909;
 --color-white: #ffffff;
----color-light-grey: #f3f3f3;
+--color-light-grey: #f3f3f3;
 --color-dark-grey: #353535;
 --text-color: var(--color-black);
 
