@@ -230,6 +230,11 @@ ul.row {
     fill: var(--text-color);
 }
 
+/* In [data-section-theme="dark"] add variable button-color */
+[data-section-theme="dark"] {
+    --button-color: var(var(--color-white));
+} 
+
 /* Define custom properties to the root elements */
 :root {
     /* Color properties */
