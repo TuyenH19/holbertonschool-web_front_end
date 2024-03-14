@@ -232,7 +232,7 @@ ul.row {
 
 /* In [data-section-theme="dark"] add variable button-color */
 [data-section-theme="dark"] {
-    --button-color: var(var(--color-white));
+    --button-color: var(--color-white);
 } 
 
 /* Define custom properties to the root elements */
