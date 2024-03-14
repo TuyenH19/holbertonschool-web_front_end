@@ -41,7 +41,7 @@ a:hover {
 }
 
 a:active {
-    background-color: var(---color-light-grey);
+    background-color: var(--color-light-grey);
 }
 
 /* Set display value for elements with class visually-hidden */
@@ -168,7 +168,7 @@ ul.row {
 }
 
 /* Set all ul tag in the footer class */
-.footer ul {
+ul.footer {
     text-align: right;
 }
 
@@ -178,7 +178,7 @@ ul.row {
 --color-primary: #d73953;
 --color-black: #090909;
 --color-white: #ffffff;
----color-light-grey: #f3f3f3;
+--color-light-grey: #f3f3f3;
 --color-dark-grey: #353535;
 --text-color: var(--color-black);
 
