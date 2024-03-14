@@ -1,0 +1,352 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+/*# sourceMappingURL=normalize.min.css.map */
+
+/* Add a universal box sizing rule */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+/* Set  the behavior of the scroll to be as fluid as possible and set value of font-size */
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+/* Set the foreground color, value of font-family, font-size and boldness(font-weight) of fonts for body  */
+body {
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base); /* Set minimum height of line boxes */
+}
+
+/* Set font-family and value of boldness(font-weight) for new 6 levels of heading tags */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold); 
+}
+
+/* Pseudo Classes */
+a:link {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:visited {
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: var(--color-light-grey);
+}
+
+/* Create a button class sector */
+.button {
+    display: var(--button-display);
+    padding: var(--button-padding);
+    border-style: var(--button-border);
+    font-size: var(--button-font-size);
+    color: var(--button-color);
+    text-decoration: var(--button-text-decoration);
+}
+
+/* Create hover state of class button */
+.button:hover {
+    color: var(--button-hover-color);
+    text-decoration: var(--button-hover-text-decoration);
+    background: var(--button-hover-background);
+}
+
+/* Set display value for elements with class visually-hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* Set foreground color value for elements with class card-category */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Set card-title that is inside card-services */
+.card-services .card-title {
+    margin: none;
+}
+
+/* Set target a that inside card-services */
+.card-services a {
+    display: block;
+    padding: 2rem; /* 2 times the root element's padding */
+    background-color: var(--color-light-grey);
+}
+
+/* Set hover state of a that inside card.services */
+.card-services a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
+}
+
+.card-testimonial {
+    text-align: center;
+}
+
+.card-testimonial .card-avatar {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+.card-testimonial .card-avatar html {
+    display: block;
+    padding: 1rem;
+    color: var(--color-primary);
+}
+/* Set the padding on all 4 sides for class section */
+.section {
+    padding: var(--section-padding);
+}
+
+/* Set horizontal alignment  of class section-header */
+.section-header {
+    text-align: var(--section-header-align);
+    padding: var(--section-header-padding);
+}
+
+/* Set pad all 4 side for class section-body */
+.section-body {
+    padding: var(--section-body-padding);
+}
+
+/* Set pad all 4 sides for class section-footer */
+.section-footer {
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
+}
+
+/* Set for class section-title  */
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+
+/* Set foreground color value for elements with class section-tagline */
+.section-tagline {
+    color: var(--color-primary);
+    font-family: var(--font-family-title); /* Set family of fonts */
+    transform: var(--section-tagline-transform); /* Transform the text */
+    font-weight: var(--font-weight-bold); /* Set the weight of fonts */
+    margin: var(--section-tagline-margin);
+}
+
+/* Set attribute for class container */
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Set pad all 4 sides for class footer */
+.footer {
+    padding: var(--footer-padding);
+}
+
+/* Let navbar-menu float to the right */
+.navbar-menu {
+    float: right;
+}
+
+/* Set nav class */
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+/* Set nav-item class in nav class */
+.nav .nav-item {
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin); 
+}
+
+/* Set nav-link class in nav class */
+.nav .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+/* Set hover over class nav-link in class nav */
+.nav .nav-link:hover {
+    color: var(--nav-item-link-hover);
+}
+/* Set all ul with the class row */
+ul.row {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Rules that creates a new row after each instance of class row */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Select all class that start with col- */
+[class^="col-"] {
+    float: left;
+    padding: 0.5rem;
+}
+
+/* Set class col-1-3 */
+.col-1-3 {
+    width: 33.33%;
+}
+
+/* Set class col-1-2 */
+.col-1-2 {
+    width: 50%;
+}
+
+/* Set class footer-copyright */
+.footer-copyright {
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+/* Set all ul tag in the footer class */
+.footer ul {
+    text-align: right;
+}
+
+/* Set footer-address class */
+.footer-address {
+    color: var(--text-color);
+}
+/* Set social-link */
+.social-link {
+    display: block;
+}
+/* set  class social-link and all svg children nested*/
+.social-link > svg {
+    fill: var(--text-color);
+}
+
+/* In [data-section-theme="dark"] add variable button-color */
+[data-section-theme="dark"] {
+    --button-color: var(--color-white);
+} 
+
+.section-hero {
+    background-size: 2;
+    width: 90rem;
+    height: auto;
+}
+
+.section-hero .section-title {
+    margin-bottom: 5rem;
+}
+
+.section-hero .section-inner {
+    padding-top: 10rem;
+    padding-right: 40rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+}
+
+.header {
+    padding: var(--header-padding);
+}
+
+.header-logo {
+    position: var(--header-logo-position);    
+}
+
+.header-logo link {
+    display: var(--header-logo-link-display);
+    position: var(--header-logo-link-position);
+    transform: translate(var(--header-logo-link-top), var(--header-logo-link-left));
+}
+
+/* Define custom properties to the root elements */
+:root {
+    /* Color properties */
+--color-primary: #d73953;
+--color-black: #090909;
+--color-white: #ffffff;
+--color-light-grey: #f3f3f3;
+--color-dark-grey: #353535;
+--text-color: var(--color-black);
+
+    /* Font properties */
+--font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+--font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+--font-size-small: 1.2rem;
+--font-size-medium: 1.6rem;
+--font-size-large: 1.8rem;
+--font-size-x-large: 2.3rem;
+--font-size-xx-large: 4.8rem;
+--font-weight-regular: 400;
+--font-weight-bold: 700;
+
+    /* Line height properties */
+--line-height-small: 1.2;
+--line-height-base: 1.5;
+--line-height-big: 1.8;
+
+    /* Section properties */
+--section-header-align: center;
+--section-tagline-transform: uppercase;
+--section-title-margin: 0;
+--section-title-color: var(--color-black);
+--section-padding: 5rem 0;
+--section-header-padding: 0 0 3rem;
+--section-body-padding: 0 0 3rem;
+--section-footer-padding: 3rem 0 0;
+--section-footer-align: center;
+--section-tagline-margin: 0;
+
+    /* Footer properties */
+--footer-padding: 5rem 0 1rem;
+
+    /* Nav properties */
+--nav-item-font-family: var(--font-family-title);
+--nav-item-font-weight: var(--font-weight-bold);
+--nav-item-font-size: var(font-size-medium);
+--nav-item-letter-spacing: 0.04rem;
+--nav-item-display: inline-block;
+--nav-item-margin: 0 0 3rem 0;
+--nav-item-link-hover: var(--color-primary);
+
+    /* Button properties */
+--button-display: inline-block;
+--button-padding: 1.5rem 3rem;
+--button-border: 0.2rem solid var(--color-primary);
+--button-color: color-black;
+--button-text-decoration: none;
+--button-font-size: font-size-large;
+--button-hover-color: color-white;
+--button-hover-text-decoration: none;
+--button-hover-background: color-primary;
+
+    /* Header properties */
+--header-padding: 4rem 0 0;
+--header-logo-position: relative;
+--header-logo-link-display: inline-block;
+--header-logo-link-position: absolute;
+--header-logo-link-top: -1rem;
+--header-logo-link-left: 0;
+}
