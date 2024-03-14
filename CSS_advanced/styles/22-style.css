@@ -5,6 +5,14 @@
 *, *:before, *:after {
     box-sizing: border-box;
 }
+
+/* Style the data-section-theme=“dark” */
+[data-section-theme="dark"] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background: var(--color-black);
+}
+
 /* Set  the behavior of the scroll to be as fluid as possible and set value of font-size */
 html {
     scroll-behavior: smooth;
