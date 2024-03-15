@@ -175,11 +175,6 @@ a:active {
     margin-right: auto;
 }
 
-/* Set pad all 4 sides for class footer */
-.footer {
-    padding: var(--footer-padding);
-}
-
 /* Let navbar-menu float to the right */
 .navbar-menu {
     float: right;
@@ -262,4 +257,9 @@ a:active {
 --nav-item-display: inline-block;
 --nav-item-margin: 0 0 3rem 0;
 --nav-item-link-hover: var(--color-primary);
+}
+
+/* Set pad all 4 sides for class footer */
+.footer {
+    padding: var(--footer-padding);
 }
