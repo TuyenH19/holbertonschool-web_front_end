@@ -88,7 +88,7 @@ a:active {
 
 /* Set card-title that is inside card-services */
 .card-services .card-title {
-    margin: none;
+    margin: 0;
 }
 
 /* Set target a that inside card-services */
@@ -115,18 +115,18 @@ a:active {
     height: 10rem;
 }
 
-.card-testimonial .card-avatar html {
+.card-testimonial .card-quote cite {
     display: block;
     padding: 1rem;
     color: var(--color-primary);
 }
 
-.card-work card-outer {
+.card-work .card-outer {
     position: relative;
     overflow: hidden;
 }
 
-.card-work card-image {
+.card-work .card-image img {
     height: 30rem;
     width: 100%;
     object-fit: cover;
@@ -153,7 +153,7 @@ a:active {
 .card-work .card-title a {
     display: block;
     text-decoration: none;
-    padding: 45%;
+    padding-top: 45%;
 }
 .card-work .card-title a::after {
     position: absolute;
