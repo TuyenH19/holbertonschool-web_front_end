@@ -89,7 +89,7 @@ a:active {
 .section-tagline {
     color: var(--color-primary);
     font-family: var(--font-family-title); /* Set family of fonts */
-    transform: var(--section-tagline-transform); /* Transform the text */
+    text-transform: var(--section-tagline-transform); /* Transform the text */
     font-weight: var(--font-weight-bold); /* Set the weight of fonts */
 }
 
