@@ -196,7 +196,7 @@ ul.row {
 
 /* Set card-title that is inside card-services */
 .card-services .card-title {
-    margin: none;
+    margin: 0;
 }
 
 /* Set target a that inside card-services */
