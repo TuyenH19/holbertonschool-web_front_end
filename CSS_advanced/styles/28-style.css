@@ -259,8 +259,11 @@ ul.row {
 
 /* In [data-section-theme="dark"] add variable button-color */
 [data-section-theme="dark"] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background: var(--color-black);
     --button-color: var(--color-white);
-} 
+}
 
 .header {
     padding: var(--header-padding);
@@ -284,7 +287,7 @@ ul.row {
 --color-white: #ffffff;
 --color-light-grey: #f3f3f3;
 --color-dark-grey: #353535;
---text-color: var(--color-black);
+--text-color: var(--color-white);
 
     /* Font properties */
 --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
