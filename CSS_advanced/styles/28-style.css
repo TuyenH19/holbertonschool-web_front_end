@@ -20,6 +20,21 @@ body {
     line-height: var(--line-height-base); /* Set minimum height of line boxes */
 }
 
+.header {
+    padding: var(--header-padding);
+}
+
+.header-logo {
+    position: var(--header-logo-position);
+}
+
+.header-logo a {
+    display: var(--header-logo-link-display);
+    position: var(--header-logo-link-position);
+    top: var(--header-logo-link-top);
+    left: var(--header-logo-link-left);
+}
+
 /* Set font-family and value of boldness(font-weight) for new 6 levels of heading tags */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
@@ -315,6 +330,7 @@ ul.row {
 --section-body-padding: 0 0 3rem;
 --section-footer-padding: 3rem 0 0;
 --section-footer-align: center;
+--section-tagline-margin: 0;
 
     /* Footer properties */
 --footer-padding: 5rem 0 1rem;
