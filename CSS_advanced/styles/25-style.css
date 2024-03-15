@@ -61,6 +61,11 @@ a:active {
     background: var(--button-hover-background);
 }
 
+/* In [data-section-theme="dark"] add variable button-color */
+[data-section-theme="dark"] {
+    --button-color: var(--color-white);
+} 
+
 /* Set display value for elements with class visually-hidden */
 .visually-hidden {
     display: none;
@@ -69,25 +74,6 @@ a:active {
 /* Set foreground color value for elements with class card-category */
 .card-category {
     color: var(--color-primary);
-}
-
-/* Set card-title that is inside card-services */
-.card-services .card-title {
-    margin: 0;
-}
-
-/* Set target a that inside card-services */
-.card-services a {
-    display: block;
-    padding: 2rem; /* 2 times the root element's padding */
-    background-color: var(--color-light-grey);
-}
-
-/* Set hover state of a that inside card.services */
-.card-services a:hover {
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    text-decoration: none;
 }
 
 /* Set the padding on all 4 sides for class section */
@@ -230,10 +216,24 @@ ul.row {
     fill: var(--text-color);
 }
 
-/* In [data-section-theme="dark"] add variable button-color */
-[data-section-theme="dark"] {
-    --button-color: var(--color-white);
-} 
+/* Set card-title that is inside card-services */
+.card-services .card-title {
+    margin: 0;
+}
+
+/* Set target a that inside card-services */
+.card-services a {
+    display: block;
+    padding: 2rem; /* 2 times the root element's padding */
+    background-color: var(--color-light-grey);
+}
+
+/* Set hover state of a that inside card.services */
+.card-services a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
+}
 
 /* Define custom properties to the root elements */
 :root {
