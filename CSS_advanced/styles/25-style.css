@@ -171,7 +171,7 @@ ul.row {
 [data-section-theme="dark"] {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
-    background: var(--color-black);
+    --background: var(--color-black);
     --button-color: var(--color-white);
 }
 
@@ -231,7 +231,7 @@ ul.row {
 /* Set hover state of a that inside card.services */
 .card-services a:hover {
     color: var(--color-white);
-    background: var(--color-primary);
+    background-color: var(--color-primary);
     text-decoration: none;
 }
 
