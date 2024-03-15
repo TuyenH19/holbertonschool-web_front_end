@@ -74,12 +74,7 @@ button,select {
 *, *:before, *:after {
     box-sizing: border-box;
 }
-[data-section-theme="dark"] {
-    --text-color: var(--color-white);
-    --section-title-color: var(--color-white);
-    background-color: var(--color-black);
-    --button-color: var(--color-white);
-}
+
 /* Set  the behavior of the scroll to be as fluid as possible and set value of font-size */
 html {
     scroll-behavior: smooth;
