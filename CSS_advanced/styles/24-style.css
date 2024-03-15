@@ -69,7 +69,7 @@ a:active {
 /* Set hover state of a that inside card.services */
 .card-services a:hover {
     color: var(--color-white);
-    background-color: var(--color-primary);
+    background: var(--color-primary);
     text-decoration: none;
 }
 
