@@ -723,7 +723,7 @@ textarea:focus {
   background-color: var(--color-white);
 }
 
-.form-group[state="focus-within"] {
+.form-group:focus-within {
   background-color: var(--color-light-grey);
   transition: .3s;
 }
