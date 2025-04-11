@@ -11,4 +11,5 @@ function createClassRoom(numbersOfStudents) {
   }
 
 let classRoom = createClassRoom(10);
-console.log(classRoom);
+
+
