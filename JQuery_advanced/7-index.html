@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 0</title>
+
+    </head>
+
+    <body>
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="application/javascript">
+
+        function createSearchForm() {
+          const form = $('<form>');
+          const inputValue = $('<input>').attr('type', 'text');
+          const submitButton = $('<input>').attr('type', 'submit').val('Search');
+          ul = $('<ul>');
+          form.append(inputValue, submitButton);
+
+          $('body').append(form, ul);
+
+          form.on('submit', function(event) {
+            event.preventDefault(); // prevent the page from reloading
+            const searchValue = inputValue.val();
+            queryWikipedia(searchValue);
+          });
+        }
+
+        function addNewArticle(id, title, snippet) {
+          const li = $('<li>').append(
+              $('<p>').append(
+                  $('<span>').html(`${id} - <b>${title}</b>`)
+                  ),
+              $('<p>').html(snippet)
+          );
+          ul.append(li);
+        }
+
+
+        function queryWikipedia(search) {
+          const data = {
+            action: "query",
+            list: "search",
+            srsearch: search,
+            format: "json",
+            origin: "*"
+          };
+        
+          $.get("https://en.wikipedia.org/w/api.php", data, function(response) {
+            const results = response.query.search;
+            ul.empty(); // clear previous result
+            results.forEach(result => {
+              const { pageid, title, snippet } = result;
+              addNewArticle(pageid, title, snippet);
+            });
+          });
+        }
+
+        $(document).ready(function() {
+            createSearchForm();
+        });
+    </script>
+</html>
